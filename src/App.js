@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import {Route, Routes} from 'react-router-dom';
+
+import Home from './Pages/Home';
+import FilmIndex from './Pages/FilmIndex';
+import FilmShow from './Pages/FilmShow';
+import About from './Pages/About';
+
+
 function App() {
+
+  const URL = "https://ghibliapi.herokuapp.com";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/films' element={<FilmIndex URL={URL}/>}/>
+        <Route path='/filmshow/' element={<FilmShow URL={URL}/>}/>
+        <Route path='/about/' element={<About URL={URL}/>}/>
+      </Routes>
     </div>
   );
 }
