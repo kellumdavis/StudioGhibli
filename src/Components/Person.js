@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
-function Person (props) {
+function Person ({filmId}) {
 
   const url = `https://ghibliapi.herokuapp.com/people/`;
 
@@ -23,10 +23,18 @@ function Person (props) {
     
     getPersonInfo();
   }, []);
+
+  const filteredByFilm = personInfo.filter(person => {
+      if(person.films.some(film => film.includes(filmId))){
+          return true
+      } 
+      return false
+  }) 
+  console.log({filteredByFilm})
   return (
     <div>
-      {personInfo.map((people, idx) => {
-        const id = people.url.split("/people/").slice(1);
+      {filteredByFilm.map((people, idx) => {
+        const id = people.id;
     
         return (
           <div key={idx}>

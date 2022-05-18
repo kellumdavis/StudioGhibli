@@ -1,30 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Person from "../Components/Person";
-
+import useGetFilmShow from "../hooks/useGetFilmShow";
 function FilmShow(props) {
   const params = useParams();
   const filmId = params.id;
-  const url = `https://ghibliapi.herokuapp.com/films/${filmId}`;
-
-  const [filmInfo, setFilmInfo] = useState("null");
- 
-
-  useEffect(() => {
-    const getFilmInfo = async () => {
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-        setFilmInfo(data);
-      } catch (err) {
-        console.log("Ran into a problem ERROR");
-      }
-    };
-    
-    getFilmInfo();
-  }, []);
+  const {filmInfo, loading} = useGetFilmShow(filmId);
   
+
+  if(loading){
+    return (
+        <h1>...Loading</h1>
+    )
+}
+
   return (
     <div>
       <h1>{filmInfo.title}</h1>
@@ -32,7 +21,7 @@ function FilmShow(props) {
       <p>{filmInfo.description}</p>
       <p>Directed By:{filmInfo.director}</p>
       <p>Release Date:{filmInfo.release_date}</p>
-      <Person/>
+      <Person filmId={filmId}/>
     </div>
     
   );

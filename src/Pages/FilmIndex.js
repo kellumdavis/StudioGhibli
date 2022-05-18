@@ -1,30 +1,25 @@
 
 import{ useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import useGetFilms from "../hooks/useGetFilms";
 function FilmIndex(props) {
-    const [film, setFilm] = useState([]);
-    const url = "https://ghibliapi.herokuapp.com/films";
+   const {loading, films} = useGetFilms();
+
+   if(loading){
+       return (
+           <h1>...Loading</h1>
+       )
+   }
    
-    useEffect(() => {
-        const getFilm = async () => {
-            try {
-              const response = await fetch(url);
-              const data = await response.json();
-              setFilm(data);
-            } catch (err) {
-              console.log("Ran into a problem ERROR");
-            }
-          };
-    getFilm()}, []);
     return (
       <div>
-        {film.map((films, idx) => {
-          const id = films.url.split("/films/").slice(1);
+        {films.map((film, idx) => {
+          const id = film.id;
           return (
             <div key={idx}>
               <Link to={`/filmshow/${id}`} >
-                <h2>{films.title}</h2>
-                <img src={films.image} alt={films.title}/>
+                <h2>{film.title}</h2>
+                <img src={film.image} alt={film.title}/>
               </Link>
             </div>
           );
