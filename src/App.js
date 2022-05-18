@@ -2,7 +2,7 @@ import './App.css';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import {Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router,Route, Routes} from 'react-router-dom';
 
 import Home from './Pages/Home';
 import FilmIndex from './Pages/FilmIndex';
@@ -16,7 +16,9 @@ function App() {
 
   return (
     <div className="App">
+     
       <Header/>
+      
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/films' element={<FilmIndex URL={URL}/>}/>

@@ -1,22 +1,32 @@
-import {Link} from 'react-router-dom'
-
+import React from "react";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from "./HeaderElements";
 function Header(props) {
-    return (
+  return (
     <header>
-        <h1>Studio Ghibli</h1>
-        <nav>
-            <Link to='/'>
-                <div>Home</div>
-            </Link>
-            <Link to='/films'>
-                <div>Films</div>
-            </Link>
-            <Link to='/about'>
-                <div>About</div>
-            </Link>
-        </nav>
+      <h1>Studio Ghibli</h1>
+      <Nav>
+        <NavLink to="/">
+          <div>Home</div>
+        </NavLink>
+        <Bars />
+        <NavMenu>
+          <NavLink to="/films" activeStyle>
+            <div>Films</div>
+          </NavLink>
+          <NavLink to="/about" activeStyle>
+            <div>About</div>
+          </NavLink>
+        </NavMenu>
+      </Nav>
     </header>
-        )
-  }
-  
-  export default Header;
+  );
+}
+
+export default Header;
