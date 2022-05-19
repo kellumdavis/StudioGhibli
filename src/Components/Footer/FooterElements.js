@@ -10,10 +10,6 @@ justify-content: center;
 padding: 0.5rem calc((100vw - 1000px) /2);
 z-index:10;
 `
-export const a = styled(FaGithub)`
-text-decoration: none;
-color: aliceblue;
-`
 
 export const NavLink = styled(Link)`
  color: #fff;

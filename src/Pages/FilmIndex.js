@@ -12,14 +12,14 @@ function FilmIndex(props) {
    }
    
     return (
-      <div>
+      <div className="indexMovieContainer">
         {films.map((film, idx) => {
           const id = film.id;
           return (
-            <div key={idx}>
-              <Link to={`/filmshow/${id}`} >
-                <h2>{film.title}</h2>
-                <img src={film.image} alt={film.title}/>
+            <div className="indexMovie" key={idx}>
+              <Link className="indexLink" to={`/filmshow/${id}`} >
+                <h2 className="indexTitle">{film.title}</h2>
+                <img className="indexImage" src={film.image} alt={film.title}/>
               </Link>
             </div>
           );
