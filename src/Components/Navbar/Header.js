@@ -1,21 +1,23 @@
 import React from "react";
-import {
-  Nav,
+import { FaBars } from "react-icons/fa";
+
+ import{ Nav,
   NavLink,
-  Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
+  MobileIcon
 } from "./HeaderElements";
-function Header(props) {
+function Navbar({toggle}) {
+  console.log({toggle})
   return (
     <header>
-      <h1>Studio Ghibli</h1>
       <Nav>
         <NavLink to="/">
-          <div>Home</div>
+          <img className="ghibli-logo" src="https://fontmeme.com/permalink/220518/ca3ba66369633f680a4aedf7deb05dd2.png" alt="studio ghibli"/>
         </NavLink>
-        <Bars />
+        <MobileIcon onClick={toggle}>
+        <FaBars />
+
+        </MobileIcon>
         <NavMenu>
           <NavLink to="/films" activeStyle>
             <div>Films</div>
@@ -29,4 +31,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default Navbar;

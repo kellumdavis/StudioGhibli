@@ -1,6 +1,8 @@
 
 body{
-  background-color: aliceblue;}
+  background-color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
   
   .text-block {
     width:100%;
@@ -16,4 +18,14 @@ body{
   }
   .text-block h3, p{
     margin: 5px;
+    font-size: 2rem;
   }
+
+  .ghibli-logo{
+    width:200px;
+  }
+  .mainText{
+    background-image: url('https://wallpaperaccess.com/full/42614.jpg');
+  }
+
+  
