@@ -4,7 +4,7 @@ import {FaGithub} from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: rgba(56,82,123, 1);
-height: 80px;
+height: 60px;
 display: flex;
 justify-content: center;
 padding: 0.5rem calc((100vw - 1000px) /2);
@@ -56,9 +56,7 @@ export const NavMenu = styled.div`
  align-items: center;
  margin-right: -24px;
 
- @media screen and (max-width: 768px) {
-     display: none;
- }
+
 `
 
 export const NavBtn = styled.nav`
