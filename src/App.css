@@ -3,12 +3,22 @@ body{
   background-color: aliceblue;
   font-family: 'Roboto', sans-serif;
 }
-  
+ h4{
+   color:aliceblue;
+ }
+  .footAnchor{
+    color: aliceblue;
+    margin: 5px;
+    
+  }
+  a:hover{
+    scale: 1.1;
+  }
   .text-block {
     width:100%;
     position: absolute;
     bottom:0px;
-    background-color: rgba(56,82,123, 1);
+    background-color: rgba(56,82,123, .8);
     color: white;
     display: flex;
     flex-direction:column;
@@ -37,12 +47,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(240,248,255,.7);
+    background-color: rgba(0,0,0,.3);
     height: 100%;
     width:100%;
     font-size: 2rem;
     text-align: center;
-    color: rgba(56,82,123, 1);
+    color: aliceblue;
     text-shadow: .3em .3em .4em rgba(0,0,0,0.3);
   }
 
