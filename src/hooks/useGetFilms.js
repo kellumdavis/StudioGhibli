@@ -17,11 +17,11 @@ const useGetFilms = () => {
       setFilms(data);
     } catch (err) {
       console.log("Ran into a problem ERROR");
-    }finally{
-        setLoading(false)
+    } finally {
+      setLoading(false);
     }
   };
 
   return { loading, films };
 };
- export default useGetFilms;
+export default useGetFilms;

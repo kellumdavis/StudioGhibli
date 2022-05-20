@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { NavLink as Link} from 'react-router-dom'
-import {FaGithub} from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: rgba(56,82,123, 1);

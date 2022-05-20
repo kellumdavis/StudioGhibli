@@ -225,5 +225,14 @@ body{
   .aboutImage img{
     width:100%;
   }
-
+  .mainTextContainer{
+    background-image: url('https://wallpaperaccess.com/full/42614.jpg');
+    background-attachment:fixed;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+  }
 }

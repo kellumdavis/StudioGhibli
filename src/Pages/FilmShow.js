@@ -30,7 +30,7 @@ function FilmShow(props) {
           <p>Produced By:{filmInfo.producer}</p>
           <p>Release Date:{filmInfo.release_date}</p>
           <p>
-            <SiRottentomatoes className="rotten"/>:{filmInfo.rt_score}
+            <SiRottentomatoes className="rotten" />:{filmInfo.rt_score}
           </p>
         </div>
         <div className="showPageDescription">

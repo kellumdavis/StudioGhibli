@@ -1,6 +1,5 @@
 import React from "react";
  import{ Nav,
-  NavLink,
   NavMenu,
 } from "./FooterElements";
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
