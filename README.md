@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Studio Ghibli Films
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Studio Ghibli Films info site that contains data on all of the Studio Ghible films.(i.e. Description, Directed by, release Date, Rotten Tomatoes Score)
 
-## Available Scripts
+![image](https://user-images.githubusercontent.com/21118840/169534643-ff8c6935-8442-42e9-a0e3-8ed31ee89537.png)
 
-In the project directory, you can run:
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React, CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/kellumdavis/StudioGhibli.git
+   ```
+2. Install dependencies
+```sh
+   npm i
+   ```
+3. Have Fun!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Contribution Guidelines
 
-### `npm run build`
+## How to Identify Bugs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> If you identify bugs, submit an issue on the Git repo. Please detail the bug in your issue. If you know how to fix it, feel free to note the methods you would use. You could also submit a pull request with suggested code to fix it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Wire Frames
+![image](https://user-images.githubusercontent.com/21118840/168496432-55e90a6f-130c-4212-8a66-23ee80dd11f2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## User Stories
+As a user I want to see a list of all Studio Ghibli films.
+As a user I want to visit each film's page and find info on the film.
+As a user I want to see info on all of the characters within each film.
 
-### `npm run eject`
+## MVP Goals
+Landing Page
+-Have a Sliding Carousel of various Ghibli films
+-Have a functioning Header and footer on each page
+Film index Page
+-Have a list of all Ghibli films displayed 
+Film Show Page
+-Display Film Image and various info on the film
+-Have a link to Character profile page
+Character Profile Page
+-Display basic info on the character
+About Page
+-Display info on the history of Studio Ghibli
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Stretch Goals (if applicable)
+-Implement Sass
+-Have a search bar feature on the film index page
+-User Profiles and login
+-Implement a review film feature
