@@ -47,7 +47,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
     height: 100%;
     width:100%;
     font-size: 2rem;
@@ -90,9 +90,100 @@ body{
   padding: 0px;
   
 }
-.indexTitle{
-  
-  
+
+.showPageContainer{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  background: rgba(32, 85, 131, 0.5);
+  color: rgb(22, 38, 63);
+}  
+.showPageWrapper1{
+  /* display:flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 5px black; */
+  height:100%;
+  padding: 10px;
+}
+.showPageWrapper2{
+  /* display:flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: solid 5px black; */
+  height: 100%;
+  padding: 10px;
+  margin: 1px;
+  min-width: 0;
   
 }
+.showPageTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.showPageTitle h1{
+  margin:0;
+  font-size: 3rem;
+}
+.showPageTitle h3{
+  margin:0;
+}
+
+.showPageBanner img{
+  width: 700px;
+  margin:  10px 0;
+  border: solid 5px rgb(22, 38, 63);
+  box-shadow: 5px 5px 5px rgb(22, 38, 63);
+}
+
+.showPageDescription{
+  border-top: solid 5px rgb(22, 38, 63);
+  padding: 10px;
+}
+.rotten{
+  color:orangered;
+  background-color: rgb(22, 38, 63);
+  border-radius: 30%;
+}
+@media only screen and (max-width: 1000px){
+  .showPageBanner img{
+    width: 400px;
+    margin:  10px 0;
+    border: solid 5px rgb(22, 38, 63);
+    box-shadow: 5px 5px 5px rgb(22, 38, 63);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .showPageContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(32, 85, 131, 0.5);
+    color: rgb(22, 38, 63);
+  }  
+  .showPageDescription p{
+    font-size: 1.5rem;
+  }
+  .showPageCredits p{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .showPageBanner img{
+    width: 95%;
+    margin:  10px 0;
+    border: solid 5px rgb(22, 38, 63);
+    box-shadow: 5px 5px 5px rgb(22, 38, 63);
+  }
   
+}

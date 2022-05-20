@@ -4,7 +4,7 @@ import {FaGithub} from 'react-icons/fa'
 
 export const Nav = styled.nav`
 background: rgba(56,82,123, 1);
-height: 60px;
+min-height: 60px;
 display: flex;
 justify-content: center;
 padding: 0.5rem calc((100vw - 1000px) /2);
